@@ -36,9 +36,7 @@ def initialize_db(conn: sqlite3.Connection) -> None:
             bid TEXT NOT NULL,
             sqty INTEGER NOT NULL,
             sdiscount INTEGER NOT NULL,
-            stotal INTEGER NOT NULL,
-            FOREIGN KEY (mid) REFERENCES member(mid),
-            FOREIGN KEY (bid) REFERENCES book(bid)
+            stotal INTEGER NOT NULL
         );
     '''
     )
